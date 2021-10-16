@@ -16,6 +16,7 @@
 	<description>ToDo full stack</description>
 	<properties>
 		<java.version>11</java.version>
+		<start-class>example.ToDoBackApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
