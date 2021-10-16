@@ -15,7 +15,7 @@ public class UserModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userId;
 	
-	@Column(name = "User_Name",nullable = false)
+	@Column(name = "User_Name",nullable = false, unique = true)
 	private String userName;
 	
 	@Column(name = "User_Pass",nullable = false)
@@ -25,10 +25,12 @@ public class UserModel {
 		super();
 		this.userName = userName;
 		this.userPass = userPass;
+		System.out.println("In 2 arg");
 	}
 
 	public UserModel() {
 		super();
+		System.out.println("In no arg");
 	}
 
 	public UserModel(int userId, String userName, String userPass) {
@@ -36,6 +38,7 @@ public class UserModel {
 		this.userId = userId;
 		this.userName = userName;
 		this.userPass = userPass;
+		System.out.println("In all arg");
 	}
 
 	public int getUserId() {

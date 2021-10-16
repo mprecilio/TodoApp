@@ -8,4 +8,6 @@ import example.models.UserModel;
 @Repository
 public interface AppDao extends JpaRepository<UserModel, Integer> {
 
+	
+
 }
